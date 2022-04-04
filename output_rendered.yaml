@@ -1,0 +1,18 @@
+---
+# Source: some test chart/templates/cm_one.yaml
+kind: ConfigMap
+apiVersion: v1
+metadata:
+  name: some-test-path-
+  namespace: default
+data:
+  some-value: "in configmap"
+---
+# Source: some test chart/templates/cm_two.yaml
+kind: ConfigMap
+apiVersion: v1
+metadata:
+  name: "some-test-path-"
+  namespace: default
+data:
+  some-value: "in configmap"

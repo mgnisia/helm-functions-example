@@ -1,0 +1,8 @@
+kind: ConfigMap
+apiVersion: v1
+metadata:
+  # Quote
+  name: {{ replace "/" "-" .Values.path | lower | quote }}
+  namespace: default
+data:
+  some-value: "in configmap"
